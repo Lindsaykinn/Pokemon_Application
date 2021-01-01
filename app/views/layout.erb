@@ -10,16 +10,33 @@
     <title>Pokémon World</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="stylesheets/main.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+     <!-- Compiled and minified CSS -->     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+     
     
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       </head>
   <body>
-    <h1 class="#3c5aa6-text" style="font:'sigmar one'">Welcome to the World of <img src="images/pokemon-logo-vector.png" alt="Pokemon Logo"> </h1>
+  
+   <nav>
+    <div class="nav-wrapper container ">
+      <a href="#!" class="brand-logo left">Pokemon Catalog</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Signup</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Characters</a></li>
+        <li><a href="/characters/new">Create Character</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+      <%= yield %>  
+    </div>
+
+    <h1 class="#3c5aa6-text">Welcome to the World of <img src="images/pokemon-logo-vector.png" alt="Pokemon Logo"> </h1>
     <h3 class="#3c5aa6-text">To get started, please click <em>Log In</em> or <em>Register</em> below:</h3>
     <br>
     <p>
@@ -35,6 +52,12 @@
     </p>
 
     
+
    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   </body>
 </html>
