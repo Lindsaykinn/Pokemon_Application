@@ -4,5 +4,5 @@ class SessionsController < ApplicationController
     
     erb :'sessions/signup'
   end
-  
+
 end

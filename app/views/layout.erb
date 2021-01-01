@@ -12,12 +12,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
      <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="stylesheets/main.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       </head>
   <body>
-          <%= yield %>
+    <h1 class="#3c5aa6-text" style="font:'sigmar one'">Welcome to the World of <img src="images/pokemon-logo-vector.png" alt="Pokemon Logo"> </h1>
+    <h3 class="#3c5aa6-text">To get started, please click <em>Log In</em> or <em>Register</em> below:</h3>
+    <br>
+    <p>
+      <form style="float: left; padding-right:20px" action="/login" method="POST">
+        <a class="waves-effect waves-light btn-large findbtn">Login</a>
+      </form>
+
+      <col>
+
+      <form action="/signup" method="POST">
+        <a class="waves-effect waves-light btn-large findbtn">Register</a>
+      </form>
+    </p>
+
+    
    
   </body>
 </html>
