@@ -1,6 +1,6 @@
 class CharactersController < ApplicationController
 
   get '/characters/new' do
-    "Hello World"
+    erb :'characters/new'
   end
 end
