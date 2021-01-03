@@ -1,40 +1,36 @@
 <h3>Create Character</h3>
 
-  <form action="/characters" method="post" id="form-focus">
+  <form action="/characters" method="post">
     <div class="input-field">
-      <input id="name" type="text" name="name">
+      <input id="name" type="text" name="character[name]">
         <label for="name">Character Name</label>
     </div>
 
     <div class="input-field">
-      <input id="weight" type="number" name="weight">
+      <input id="weight" type="number" name="character[weight]">
         <label for="weight">Weight</label>
     </div>
 
     <div class="input-field">
-      <input id="height" type="text" name="height">
+      <input id="height" type="text" name="character[height]">
         <label for="height">Height</label>
     </div>
 
     <div class="input-field">
-      <input id="energy_type" type="text" name="energy_type">
+      <input id="energy_type" type="text" name="character[energy_type]">
         <label for="energy_type">Energy Type</label>
     </div>
 
     <div class="input-field">
-      <input id="vip_status" type="text" name="vip_status">
+      <input id="vip_status" type="text" name="character[vip_status]">
         <label for="vip_status">VIP Status</label>
     </div>
 
     <div class="input-field">
-      <input id="hit_points" type="number" name="hit_points">
+      <input id="hit_points" type="number" name="character[hit_points]">
         <label for="hit_points">Hit Points</label>
     </div>
 
-    <div class="input-field">
-      <input id="name" type="text" name="name">
-        <label for="name">Character Name</label>
-    </div>  
 
     <input type="submit" value="Create Character" class="btn-large findbtn">
          

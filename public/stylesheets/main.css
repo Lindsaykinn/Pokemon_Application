@@ -1,12 +1,13 @@
 body {
   background-color: lightblue;
-  font-family: Sans-Serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 18px;
   color: #3c5aa6
 }
 
 .nav-bar {
   background-color: #3c5aa6;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -16,16 +17,16 @@ img {
 
 h1 {
   font-size: 36px;
-  line-height: 54px;
-  font: 'sigmar one';
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;  
   color: #3c5aa6;
-  margin-bottom: 0%;
 }
 
 h2 {
   border-bottom: 2px solid #ccc;
   font-size: 24px;
   line-height: 36px;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 16px;
   color: #3c5aa6
 }
@@ -33,49 +34,53 @@ h2 {
 h3 {
   font-size: 18px;
   line-height: 36px;
+  font-family: 'Roboto', sans-serif;
   color: #3c5aa6;
   margin-top: 0%;
 }
 
 h4 {
   color: #3c5aa6
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
   margin-bottom: 18px;
+  font-family: 'Roboto', sans-serif;
   color: #3c5aa6
 }
 
 .findbtn {
   color: #fff;
   background-color: #3c5aa6;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: large;
 }
 
-/* label color */
+/* label color
 .input-field label {
   color: #3c5aa6;
 }
 /* label focus color */
-.input-field input[type=text]:focus + label {
+/* .input-field input[type=text]:focus + label {
   color: #3c5aa6;
-}
+} */
 /* label underline focus color */
-.input-field input[type=text]:focus {
+/* .input-field input[type=text]:focus {
   border-bottom: 1px solid #3c5aa6;
   box-shadow: 0 1px 0 0 #3c5aa6;
-}
+} */
 /* valid color */
-.input-field input[type=text].valid {
+/* .input-field input[type=text].valid {
   border-bottom: 1px solid #3c5aa6;
   box-shadow: 0 1px 0 0 #3c5aa6;
-}
+} */
 /* invalid color */
-.input-field input[type=text].invalid {
+/* .input-field input[type=text].invalid {
   border-bottom: 1px solid #3c5aa6;
   box-shadow: 0 1px 0 0 #3c5aa6;
-}
+} */ 
 
      
 
