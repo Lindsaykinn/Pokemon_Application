@@ -10,6 +10,33 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* .findbtn {
+  color: #3c5aa6 !important;
+  background-color: #fff !important;
+  border: 2px solid #3c5aa6;
+  font-size: x-large;
+  padding: 10px 24px;
+  border-radius: 8px;
+} */
+
+.findbtn {
+  background-color: #3c5aa6;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 24px;
+  margin: 4px 2px;
+  opacity: .8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.findbtn:hover {opacity: 1}
+
 img {
   vertical-align: middle;
   padding-bottom: 40px;
@@ -40,7 +67,7 @@ h3 {
 }
 
 h4 {
-  color: #3c5aa6
+  color: #3c5aa6;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -50,13 +77,7 @@ p {
   color: #3c5aa6
 }
 
-.findbtn {
-  color: #fff;
-  background-color: #3c5aa6;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: large;
-}
+
 
 /* label color
 .input-field label {

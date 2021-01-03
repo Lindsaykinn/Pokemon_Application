@@ -12,6 +12,8 @@
 12. Added form to sessions/signup.erb
 13. Added characters_controller
 14. Added characters folder to app/views
+15. Went through process of adding new characters to views and controller
+16. 
 
 
 
