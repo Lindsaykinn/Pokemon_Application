@@ -10,7 +10,8 @@ class CharactersController < ApplicationController
   end
 
   get '/characters/:id' do
-    @character = Character.find_by_id(params[:id])
+    find_character
+    redirect "/characters/new" unless @character
     erb :'characters/show'
   end
 
@@ -32,7 +33,8 @@ class CharactersController < ApplicationController
 
    patch '/characters/:id' do
     find_character
-
+    redirect_if_character_not_found
+    
     if @character.update(params[:character])
       redirect "/characters/#{@character.id}"
     else
