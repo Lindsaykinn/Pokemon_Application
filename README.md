@@ -1,3 +1,7 @@
+Need help with:
+  putting image next to character name on show page
+  
+
 
 1.  Created file tree with corneal
 2.  Created user class and table with corneal model
