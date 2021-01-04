@@ -40,6 +40,13 @@ body {
 
 .findbtn:hover {opacity: 1}
 
+.deletebtn {
+  @extend background-color: #fff;
+  @extend border-color: red;
+  
+  
+}
+
 .pokemon-logo {
   vertical-align: middle;
   padding-bottom: 40px;

@@ -40,6 +40,16 @@ class CharactersController < ApplicationController
     end
   end
 
+  delete '/characters/:id' do
+    find_character
+
+    if @character 
+      @character.destroy
+    end
+
+    redirect "/characters"
+  end
+
  
 private
 def find_character
