@@ -5,6 +5,18 @@ body {
   color: #3c5aa6
 }
 
+.content {
+  text-align: left;
+}
+
+.content img {
+  display:inline;
+}
+
+.content span {
+  display: block;
+}
+
 .nav-bar {
   background-color: #3c5aa6;
   font-family: 'Roboto', sans-serif;
