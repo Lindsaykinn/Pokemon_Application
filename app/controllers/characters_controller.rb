@@ -30,6 +30,16 @@ class CharactersController < ApplicationController
     end
    end
 
+   patch '/characters/:id' do
+    find_character
+
+    if @character.update(params[:character])
+      redirect "/characters/#{@character.id}"
+    else
+      redirect "/characters/#{@character.id}/edit"
+    end
+  end
+
  
 private
 def find_character
