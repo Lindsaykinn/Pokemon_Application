@@ -14,6 +14,12 @@ class CharactersController < ApplicationController
     erb :'characters/show'
   end
 
+  get '/characters/:id/edit' do
+    find_character
+    redirect_if_character_not_found
+    erb :'characters/edit'
+    end
+
   post '/characters' do
     character = Character.new(params[:character])
  
@@ -24,7 +30,15 @@ class CharactersController < ApplicationController
     end
    end
 
-  
+ 
+private
+def find_character
+  @character = Character.find_by_id(params[:id])
+end
+
+def redirect_if_character_not_found
+  redirect "/characters" unless @character
+end
 
   
 end
