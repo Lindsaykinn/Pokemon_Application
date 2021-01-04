@@ -1,21 +1,38 @@
-<div class="container" style="margin:0">
-<h3><%= @character.name %></h3> 
-<% if @character.energy_type == "Fire" %>
-<img src="/images/fire.png" alt="fire-img" width=5% height=5%>
-<% else %>
-<%= 'hello' %>
-<% end %> 
+<div class="content" style="margin:0">
+<h3> <%= @character.name %></h3>
+  <% if @character.energy_type == "Fire" %>
+    <img src="/images/fire.png" alt="fire-img" class="energy-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Colorless" %>
+    <img src="/images/colorless.png" alt="colorless-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Darkness" %>
+    <img src="/images/darkness.png" alt="darkness-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Dragon" %>
+    <img src="/images/dragon.png" alt="dragon-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Fairy" %>
+    <img src="/images/fairy.png" alt="fairy-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Fighting" %>
+    <img src="/images/fighting.png" alt="fighting-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Grass" %>
+    <img src="/images/grass.png" alt="grass-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Lightning" %>
+    <img src="/images/lightning.png" alt="lightning-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Metal" %>
+    <img src="/images/metal.png" alt="metal-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Psychic" %>
+    <img src="/images/psychic.png" alt="psychic-img" width=5% height=5%>
+    <% elsif @character.energy_type == "Water" %>
+    <img src="/images/water.png" alt="water-img" width=5% height=5%>
+    <% else %>
+    <h3> <%=@character.energy_type %></h3>
+  <% end %> 
 </div>
 <h5>Weight: <%= @character.weight%> lbs</h5>
-<h5>Height: <%= @character.height%></h5>
+<h5>Height: <%= @character.height%> </h5>
+<h5>VIP Status: <%=@character.vip_status %> </h5>
+<h5>Hit Points: <%=@character.hit_points %> </h5>
+<br>
+
+<a href="/characters/<%= @character.id %>/edit" style="color:##fff" onMouseOver="this.style.color='#3c5aa6' ">Edit Character</a>
 
 
 
-create_table :characters do |t|
-      t.string :name
-      t.integer :weight
-      t.string :height
-      t.string :energy_type
-      t.string :vip_status
-      t.integer :hit_points
-      t.integer :user_id
