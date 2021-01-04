@@ -1,4 +1,3 @@
-<div class="content" style="margin:0">
 <h3> <%= @character.name %></h3>
   <% if @character.energy_type == "Fire" %>
     <img src="/images/fire.png" alt="fire-img" class="energy-img" width=5% height=5%>
@@ -24,15 +23,20 @@
     <img src="/images/water.png" alt="water-img" width=5% height=5%>
     <% else %>
     <h3> <%=@character.energy_type %></h3>
-  <% end %> 
-</div>
+  <% end %>   
+
 <h5>Weight: <%= @character.weight%> lbs</h5>
 <h5>Height: <%= @character.height%> </h5>
 <h5>VIP Status: <%=@character.vip_status %> </h5>
 <h5>Hit Points: <%=@character.hit_points %> </h5>
 <br>
 
-<a href="/characters/<%= @character.id %>/edit" style="color:##fff" onMouseOver="this.style.color='#3c5aa6' ">Edit Character</a>
+
+<form action="/characters/<%= @character.id %>" method= "POST">
+<a href="/characters/<%= @character.id %>/edit" class="btn-small" style="background-color:#3c5aa6">Edit Character</a>
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Character" class="btn-small" style="background-color: Transparent">
+</form>
 
 
 
