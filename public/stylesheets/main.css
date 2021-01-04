@@ -10,15 +10,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* .findbtn {
-  color: #3c5aa6 !important;
-  background-color: #fff !important;
-  border: 2px solid #3c5aa6;
-  font-size: x-large;
-  padding: 10px 24px;
-  border-radius: 8px;
-} */
-
 .findbtn {
   background-color: #3c5aa6;
   border: none;
@@ -37,7 +28,7 @@ body {
 
 .findbtn:hover {opacity: 1}
 
-img {
+.pokemon-logo {
   vertical-align: middle;
   padding-bottom: 40px;
 }

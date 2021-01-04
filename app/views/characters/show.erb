@@ -1,0 +1,21 @@
+<div class="container" style="margin:0">
+<h3><%= @character.name %></h3> 
+<% if @character.energy_type == "Fire" %>
+<img src="/images/fire.png" alt="fire-img" width=5% height=5%>
+<% else %>
+<%= 'hello' %>
+<% end %> 
+</div>
+<h5>Weight: <%= @character.weight%> lbs</h5>
+<h5>Height: <%= @character.height%></h5>
+
+
+
+create_table :characters do |t|
+      t.string :name
+      t.integer :weight
+      t.string :height
+      t.string :energy_type
+      t.string :vip_status
+      t.integer :hit_points
+      t.integer :user_id
