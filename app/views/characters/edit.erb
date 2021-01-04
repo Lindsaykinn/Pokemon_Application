@@ -3,32 +3,32 @@
   <form action="/characters/<%= @character.id %>" method="post">
     <input type="hidden" name="_method" value="patch">
       <div class="input-field">
-        <input id="name" type="text" name="character[name]">
+        <input id="name" type="text" name="character[name]" value= <%= @character.name %>>
           <label for="name">Character Name</label>
       </div>
 
       <div class="input-field">
-        <input id="weight" type="number" name="character[weight]">
+        <input id="weight" type="number" name="character[weight]" value= <%= @character.weight %>>
           <label for="weight">Weight</label>
       </div>
 
       <div class="input-field">
-        <input id="height" type="text" name="character[height]">
+        <input id="height" type="text" name="character[height]" value= <%= @character.height %>>
           <label for="height">Height</label>
       </div>
 
       <div class="input-field">
-        <input id="energy_type" type="text" name="character[energy_type]">
+        <input id="energy_type" type="text" name="character[energy_type]" value= <%= @character.energy_type %>>
           <label for="energy_type">Energy Type</label>
       </div>
 
       <div class="input-field">
-        <input id="vip_status" type="text" name="character[vip_status]">
+        <input id="vip_status" type="text" name="character[vip_status]" value= <%= @character.vip_status %>>
           <label for="vip_status">VIP Status</label>
       </div>
 
       <div class="input-field">
-        <input id="hit_points" type="number" name="character[hit_points]">
+        <input id="hit_points" type="number" name="character[hit_points]" value= <%= @character.hit_points %>>
           <label for="hit_points">Hit Points</label>
       </div>
 
