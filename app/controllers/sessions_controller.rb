@@ -6,6 +6,10 @@ class SessionsController < ApplicationController
     redirect_if_logged_in
     erb :'sessions/signup'
   end
+
+  get '/sessions/signup' do
+    erb :'sessions/signup'
+  end
   
   # allows the sign up button to work from welcome page
   post '/signup' do

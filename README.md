@@ -2,6 +2,8 @@ Need help with:
   putting image next to character name on show page
   removing white space
   fixing login button on home page
+  add drop down for vip status
+  add drop down for energy type
   
 
 
