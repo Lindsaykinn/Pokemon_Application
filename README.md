@@ -1,5 +1,7 @@
 Need help with:
   putting image next to character name on show page
+  removing white space
+  fixing login button on home page
   
 
 

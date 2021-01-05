@@ -1,16 +1,19 @@
 class CharactersController < ApplicationController
 
   get '/characters' do
+    redirect_if_not_logged_in
     @characters = Character.all
     @character = Character.find_by_id(session[:character_id])
     erb :'/characters/index'
   end
 
   get '/characters/new' do
+    redirect_if_not_logged_in
     erb :'characters/new'
   end
 
   get '/characters/:id' do
+    redirect_if_not_logged_in
     find_character
     #will create a cookie if character is found 
     session[:character_id] = @character.id if @character
@@ -19,6 +22,7 @@ class CharactersController < ApplicationController
   end
 
   get '/characters/:id/edit' do
+    redirect_if_not_logged_in
     find_character
     redirect_if_character_not_found
     erb :'characters/edit'
