@@ -29,7 +29,8 @@ class CharactersController < ApplicationController
     end
 
   post '/characters' do
-    character = Character.new(params[:character])
+    #allows program to add characters for the user that is logged in and all users (.build is an ActiveRecord association method that we can call):
+    character = current_user.characters.build(params[:character])
  
     if character.save
      redirect '/characters'
