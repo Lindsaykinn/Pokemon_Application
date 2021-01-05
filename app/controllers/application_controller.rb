@@ -10,13 +10,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :welcome
+    erb :welcome      
+    end
 
-      # helpers do
-      #   def is_logged_in?
-      #     !!session[:user_id]
-      #   end
-    # end
+  helpers do
+    def is_logged_in?
+      !!session[:user_id]
+    end
   end
 
   
