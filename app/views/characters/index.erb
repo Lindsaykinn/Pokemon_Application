@@ -1,5 +1,8 @@
 <h3>Characters List</h3>
 
+<%# pulls in from cookie sessions from characters_controller %>
+<p>Recently Viewed: <%= @character ? @character.name : "There are no characters recently viewed" %> </p>
+
 <ul>
 <% @characters.each do |character| %>
   <li><a href="/characters/<%= character.id %>"><%= character.name %></a></li>

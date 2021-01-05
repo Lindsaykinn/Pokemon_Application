@@ -2,6 +2,7 @@ class CharactersController < ApplicationController
 
   get '/characters' do
     @characters = Character.all
+    @character = Character.find_by_id(session[:character_id])
     erb :'/characters/index'
   end
 
@@ -11,6 +12,8 @@ class CharactersController < ApplicationController
 
   get '/characters/:id' do
     find_character
+    #will create a cookie if character is found 
+    session[:character_id] = @character.id if @character
     redirect "/characters/new" unless @character
     erb :'characters/show'
   end
