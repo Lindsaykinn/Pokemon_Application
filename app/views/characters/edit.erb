@@ -20,17 +20,17 @@
       <div class="input-field">
         <select name="character[energy_type]" id="energy_type"> 
           <option><%=@character.energy_type%></option>
-          <option>Colorless</option>
-          <option>Darkness</option>
-          <option>Dragon</option>
-          <option>Fairy</option>
-          <option>Fighting</option>
-          <option>Fire</option>
+          <option data-icon="/images/colorless.png">Colorless</option>
+          <option data-icon="/images/darkness.png">Darkness</option>
+          <option data-icon="/images/dragon.png">Dragon</option>
+          <option data-icon="/images/fairy.png">Fairy</option>
+          <option data-icon="/images/fighting.png">Fighting</option>
+          <option data-icon="/images/fire.png">Fire</option>
           <option data-icon="/images/grass.png">Grass</option>
           <option data-icon="/images/lightning.png">Lightning</option>
-          <option>Metal</option>
-          <option>Psychic</option>
-          <option >Water</option>
+          <option data-icon="/images/metal.png">Metal</option>
+          <option data-icon="/images/psychi.png">Psychic</option>
+          <option data-icon="/images/water.png">Water</option>
         </select>      
         <label for="energy_type">Energy Type</label>      
       </div>
@@ -38,9 +38,9 @@
       <div class="input-field">
         <select name="character[vip_status]" id="vip_status"%>> 
           <option><%=@character.vip_status%></option>
-          <option value="1">Common</option>
-          <option value="2">Rare</option>
-          <option value="3">Very Rare</option>
+          <option>Common ●</option>
+          <option>Uncommon ◆</option>
+          <option>Rare ★</option>
         </select>
         <label for="vip_status">VIP Status</label>
       </div>
