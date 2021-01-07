@@ -1,5 +1,22 @@
 <h3>Characters List</h3>
 
+
+<form action="/characters" method= "get">
+  <div class="row" style="padding-left:0;">
+   <form class="col s12" >
+       <div class="row" style="margin-bottom:0px">
+           <div class="input-field col s6" style="padding-left:0;">
+               <input id="query" type="text" name="query" placeholder="Search Character">
+               <%# <label for="query" style="left:0px;">Search Characters</label> %>
+           </div>
+           <div class="input-field col s6">
+               <button class="findbtn btn-small" style= "background-color:#3c5aa6;"type="submit" name="action">Search</button>
+           </div>
+       </div>
+   </form>
+</div>
+
+
 <%# pulls in from cookie sessions from characters_controller %>
 <p>Recently Viewed: <%= @character ? @character.name : "There are no characters recently viewed" %> </p>
 
@@ -8,3 +25,6 @@
   <li><a href="/characters/<%= character.id %>"><%= character.name %></a></li>
   <% end %>
 </ul>
+
+
+

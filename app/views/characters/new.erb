@@ -16,13 +16,32 @@
         <label for="height">Height</label>
     </div>
 
+   
     <div class="input-field">
-      <input id="energy_type" type="text" name="character[energy_type]">
-        <label for="energy_type">Energy Type</label>
-    </div>
+    <select name="character[energy_type]" id="energy_type"> 
+      <option disabled selected>Choose your option</option>
+      <option data-icon="/images/colorless.png">Colorless</option>
+      <option data-icon="/images/darkness.png">Darkness</option>
+      <option data-icon="/images/dragon.png">Dragon</option>
+      <option data-icon="/images/fairy.png">Fairy</option>
+      <option data-icon="/images/fighting.png">Fighting</option>
+      <option data-icon="/images/fire.png">Fire</option>
+      <option data-icon="/images/grass.png">Grass</option>
+      <option data-icon="/images/lightning.png">Lightning</option>
+      <option data-icon="/images/metal.png">Metal</option>
+      <option data-icon="/images/psychic.png">Psychic</option>
+      <option data-icon="/images/water.png">Water</option>
+    </select>      
+     <label for="energy_type">Energy Type</label>      
+  </div>
 
     <div class="input-field">
-      <input id="vip_status" type="text" name="character[vip_status]">
+    <select name="character[vip_status]" id="vip_status"> 
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Common</option>
+      <option value="2">Rare</option>
+      <option value="3">Very Rare</option>
+    </select>
         <label for="vip_status">VIP Status</label>
     </div>
 
@@ -36,4 +55,10 @@
          
 
   </form>
+      <script>
+        $(document).ready(function(){
+          $('select').formSelect();
+          });
+      </script>
 
+   

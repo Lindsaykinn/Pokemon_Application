@@ -5,53 +5,6 @@ body {
   color: #3c5aa6
 }
 
-.content {
-  text-align: left;
-}
-
-.content img {
-  display:inline;
-}
-
-.content span {
-  display: block;
-}
-
-.nav-bar {
-  background-color: #3c5aa6;
-  font-family: 'Roboto', sans-serif;
-}
-
-.findbtn {
-  background-color: #3c5aa6;
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  text-align: center;
-  font-size: 24px;
-  margin: 4px 2px;
-  opacity: .8;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.findbtn:hover {opacity: 1}
-
-.deletebtn {
-  @extend background-color: #fff;
-  @extend border-color: red;
-  
-  
-}
-
-.pokemon-logo {
-  vertical-align: middle;
-  padding-bottom: 40px;
-}
-
 h1 {
   font-size: 36px;
   font-family: 'Roboto', sans-serif;
@@ -87,12 +40,62 @@ p {
   color: #3c5aa6
 }
 
-
-
-/* label color
-.input-field label {
-  color: #3c5aa6;
+/* .content {
+  text-align: left;
 }
+
+.content img {
+  display:inline;
+}
+
+.content span {
+  display: block;
+} */
+
+.nav-bar {
+  background-color: #3c5aa6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.findbtn {
+  background-color: #3c5aa6;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 24px;
+  margin: 4px 2px;
+  opacity: .8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.findbtn:hover {opacity: 1}
+
+.deletebtn {
+  @extend background-color: #fff;
+  @extend border-color: red;  
+}
+
+.pokemon-logo {
+  vertical-align: middle;
+  padding-bottom: 40px;
+}
+
+.input-field {
+  color: #3c5aa6;
+  font-size: small;
+}
+
+
+
+/* label color */
+/* .input-field label {
+  color: #3c5aa6;
+} */
 /* label focus color */
 /* .input-field input[type=text]:focus + label {
   color: #3c5aa6;
@@ -111,7 +114,7 @@ p {
 /* .input-field input[type=text].invalid {
   border-bottom: 1px solid #3c5aa6;
   box-shadow: 0 1px 0 0 #3c5aa6;
-} */ 
+} */
 
      
 
