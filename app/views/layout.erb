@@ -28,14 +28,12 @@
     <div class="nav-wrapper container">
       <a href="/" class="brand-logo left">Pokédex</a>
       <ul class="right hide-on-med-and-down">
-      <%if is_logged_in? %>
-        <li>Welcome, <%= current_user.username %> </li>
-        <% end %>
         <% if !is_logged_in? %>
         <li><a href="/login">Login</a></li>
         <li><a href="/sessions/signup">Signup</a></li>
         <% else %>
         <%# sends a get request to clear session - see sessions_controller %>
+        <li><a href="/users/<%= current_user.id %>">Welcome, <%= current_user.username %></a></li>
         <li><a href="/logout">Logout</a></li>
         <li><a href="/characters">Characters</a></li>
         <li><a href="/characters/new">Create Character</a></li>

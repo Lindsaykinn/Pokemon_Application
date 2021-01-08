@@ -2,10 +2,10 @@
 
 class SessionsController < ApplicationController
 
-  get '/signup' do
-    redirect_if_logged_in
-    erb :'sessions/signup'
-  end
+  # get '/signup' do
+  #   redirect_if_logged_in
+  #   erb :'sessions/signup'
+  # end
 
   get '/sessions/signup' do
     erb :'sessions/signup'
