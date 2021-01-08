@@ -80,10 +80,7 @@ p {
   @extend border-color: red;  
 }
 
-.pokemon-logo {
-  vertical-align: middle;
-  padding-bottom: 40px;
-}
+
 
 .input-field {
   color: #3c5aa6;
