@@ -7,6 +7,11 @@ class Character < ActiveRecord::Base
   def self.search(query)
     where("name LIKE ?", "%#{query}%")
   end
+
+  def self.alphabetize 
+    order(name: :asc)
+  end
+
 end
 
 
