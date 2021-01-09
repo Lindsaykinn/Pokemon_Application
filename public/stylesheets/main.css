@@ -75,13 +75,6 @@ p {
 
 .findbtn:hover {opacity: 1}
 
-.deletebtn {
-  @extend background-color: #fff;
-  @extend border-color: red;  
-}
-
-
-
 .input-field {
   color: #3c5aa6;
   font-size: small;
