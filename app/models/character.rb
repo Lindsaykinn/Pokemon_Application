@@ -3,7 +3,6 @@ class Character < ActiveRecord::Base
 
   validates_presence_of :name, :weight, :height, :energy_type, :vip_status, :hit_points
 
-  
 end
 
 

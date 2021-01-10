@@ -19,7 +19,7 @@ class CharactersController < ApplicationController
     redirect_if_not_owner
     #will create a cookie if character is found 
     session[:character_id] = @character.id if @character
-    redirect "/characters/new" unless @character
+    redirect_if_character_not_found
     erb :'characters/show'
   end
 
@@ -35,7 +35,7 @@ class CharactersController < ApplicationController
     #allows program to add characters for the user that is logged in and all users (.build is an ActiveRecord association method that we can call):
     character = current_user.characters.build(params[:character])
     if character.save
-     redirect '/characters'
+      redirect '/characters'
     else
      redirect '/characters/new'
     end
@@ -74,6 +74,5 @@ def redirect_if_not_owner
   redirect "/characters" unless @character.user == current_user
 end
 
-
-  
+ 
 end
