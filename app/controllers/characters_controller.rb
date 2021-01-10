@@ -3,11 +3,7 @@ class CharactersController < ApplicationController
   get '/characters' do
     redirect_if_not_logged_in
 
-    if params[:query] #only exists if search field is filled out
-      @characters = current_user.characters.search(params[:query])
-    else #search is not filled out and will display all games of current user
-      @characters = current_user.characters.alphabetize
-    end
+    @characters = current_user.characters
     @character = Character.find_by_id(session[:character_id])
     erb :'/characters/index'
   end

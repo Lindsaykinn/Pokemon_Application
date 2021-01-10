@@ -5,7 +5,5 @@ class User < ActiveRecord::Base
 
   validates :username, presence: true, uniqueness: true
 
-  # def search_characters(query)
-  #   self.characters.where("name LIKE ?", "%#{query}%")
-  # end
+ 
 end
