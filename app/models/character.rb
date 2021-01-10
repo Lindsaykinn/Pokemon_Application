@@ -12,6 +12,14 @@ class Character < ActiveRecord::Base
     order(name: :asc)
   end
 
+  def self.by_vip_status(vip_status)
+    where(vip_status: vip_status)
+  end
+
+  def self.all_vip_status 
+    self.pluck(:vip_status).uniq
+  end
+
 end
 
 
