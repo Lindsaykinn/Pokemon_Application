@@ -1,5 +1,4 @@
 require './config/environment'
-require 'sinatra/flash'
 
 class ApplicationController < Sinatra::Base
 
@@ -29,11 +28,9 @@ class ApplicationController < Sinatra::Base
     end
 
     def redirect_if_not_logged_in
-      redirect "/login" if !is_logged_in?
+      redirect "/login" unless is_logged_in?
     end
   
-  end
-
-  
+  end 
 
 end

@@ -2,16 +2,11 @@
 
 class SessionsController < ApplicationController
 
-  # get '/signup' do
-  #   redirect_if_logged_in
-  #   erb :'sessions/signup'
-  # end
-
-  get '/sessions/signup' do
-    erb :'sessions/signup'
+  get '/signup' do
+    redirect_if_logged_in
+    erb :'/sessions/signup'
   end
-  
-  # allows the sign up button to work from welcome page
+
   post '/signup' do
     user = User.new(params[:user])
    
@@ -23,6 +18,13 @@ class SessionsController < ApplicationController
       redirect "/signup"
     end
   end
+
+  # get '/sessions/signup' do
+  #   redirect "/characters"
+  # end
+  
+  # allows the sign up button to work from welcome page
+  
 
   get '/login' do
     redirect_if_logged_in
@@ -44,7 +46,7 @@ class SessionsController < ApplicationController
 
   get '/logout' do
     session.clear 
-    redirect '/login'
+    erb :welcome
   end
 
   

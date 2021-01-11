@@ -5,7 +5,7 @@ class CharactersController < ApplicationController
 
     @characters = current_user.characters
     @character = Character.find_by_id(session[:character_id])
-    erb :'/characters/index'
+    erb :'characters/index'
   end
 
   get '/characters/new' do
@@ -59,20 +59,18 @@ class CharactersController < ApplicationController
     @character.destroy
     redirect "/characters"
   end
-
  
-private
-def find_character
-  @character = Character.find_by_id(params[:id])
-end
+  private
+  def find_character
+    @character = Character.find_by_id(params[:id])
+  end
 
-def redirect_if_character_not_found
-  redirect "/characters" unless @character
-end
+  def redirect_if_character_not_found
+    redirect "/characters" unless @character
+  end
 
-def redirect_if_not_owner
-  redirect "/characters" unless @character.user == current_user
-end
-
+  def redirect_if_not_owner
+    redirect "/characters" unless @character.user == current_user
+  end
  
 end
